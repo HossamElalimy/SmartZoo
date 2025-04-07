@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+  }
+  
+  video {
+    width: 80%;
+    margin: 20px auto;
+    display: block;
+    border: 2px solid #333;
+  }
+  
+  #animal-info img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  #animal-info h2 {
+    margin-top: 10px;
+  }
+  
