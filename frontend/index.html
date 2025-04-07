@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zoo Encyclopedia</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <h1>🐾 Zoo Encyclopedia</h1>
+  <button onclick="startCamera()">Scan Marker</button>
+  <button onclick="stopCamera()">Stop Camera</button>
+
+  <video id="video" autoplay></video>
+  <canvas id="canvas" style="display:none;"></canvas>
+
+  <div id="output">
+    <img id="animal-img" src="" alt="" />
+    <h2 id="animal-name"></h2>
+    <p id="animal-fact"></p>
+  </div>
+
+  <audio id="animal-sound"></audio>
+
+  <!-- OpenCV.js -->
+  <script async src="https://docs.opencv.org/4.x/opencv.js" onload="onOpenCvReady();" onerror="onOpenCvFail();"></script>
+  <script src="/static/script.js"></script>
+</body>
+</html>
